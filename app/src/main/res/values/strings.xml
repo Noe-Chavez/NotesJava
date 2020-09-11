@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">NotesJava</string>
+    <string name="my_notes_title">My Notes</string>
+    <string name="button_login">aceptar</string>
+    <string name="input_user">Ingresar usuario</string>
+    <string name="input_password">Ingresar contraseña</string>
+    <string name="title_activity_notas">MainActivity</string>
+    <string name="title_notes">Notas</string>
+    <string name="title_favorites">favoritos</string>
+    <string name="title_account">Cuenta</string>
+</resources>
