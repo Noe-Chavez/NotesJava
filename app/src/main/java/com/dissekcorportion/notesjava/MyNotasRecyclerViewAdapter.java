@@ -2,11 +2,13 @@ package com.dissekcorportion.notesjava;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.dissekcorportion.notesjava.models.Note;
 
@@ -19,9 +21,11 @@ import java.util.List;
 public class MyNotasRecyclerViewAdapter extends RecyclerView.Adapter<MyNotasRecyclerViewAdapter.ViewHolder> {
 
     private final List<Note> mValues;
+    private Context context;
 
-    public MyNotasRecyclerViewAdapter(List<Note> items) {
+    public MyNotasRecyclerViewAdapter(Context context, List<Note> items) {
         mValues = items;
+        this.context = context;
     }
 
     @Override
@@ -46,10 +50,12 @@ public class MyNotasRecyclerViewAdapter extends RecyclerView.Adapter<MyNotasRecy
         if (holder.mItem.isFavorite())
             holder.imageViewFavorite.setImageResource(R.drawable.ic_baseline_star_24);
 
-        // Gestionar eventos click.
-        holder.imageViewFavorite.setOnClickListener() {
-
-        }
+        holder.imageViewFavorite.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(context, "Se hizo click", Toast.LENGTH_LONG);
+            }
+        });
 
     }
 

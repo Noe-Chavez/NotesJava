@@ -14,6 +14,7 @@ import android.view.ViewGroup;
 
 import com.dissekcorportion.notesjava.models.Note;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -34,6 +35,8 @@ public class NotasFragment extends Fragment {
      * fragment (e.g. upon screen orientation changes).
      */
     public NotasFragment() {
+        notes = new ArrayList<>();
+        notes.add(new Note("Prueba Titulo", "Contenido Prueba", true, 45));
     }
 
     // TODO: Customize parameter initialization
@@ -81,7 +84,7 @@ public class NotasFragment extends Fragment {
                 recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
             }
 
-            adapterNotes = new MyNotasRecyclerViewAdapter(notes);
+            adapterNotes = new MyNotasRecyclerViewAdapter(getContext(), notes);
             recyclerView.setAdapter(adapterNotes);
         }
         return view;
