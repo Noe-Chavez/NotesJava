@@ -8,4 +8,14 @@
     <string name="title_notes">Notas</string>
     <string name="title_favorites">favoritos</string>
     <string name="title_account">Cuenta</string>
+    <string name="title_fragment_dialog_new_note">Nueva nota</string>
+    <string name="instructions_fragment_dialog_new_note">Ingrese datos a la nueva nota.</string>
+    <string name="action_save_note">Guardar</string>
+    <string name="cancel_action_save_note">cancelar</string>
+    <string name="input_title_new_note">Título de la Nota</string>
+    <string name="content_note">Contenido de la nota</string>
+    <string name="radio_button_azul">Azul</string>
+    <string name="radio_button_red">Rojo</string>
+    <string name="radio_button_gold">Oro</string>
+    <string name="switch_is_favorite">Marcar como favorita</string>
 </resources>
