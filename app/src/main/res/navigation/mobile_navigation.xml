@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.dissekcorportion.notesjava.NotasFragment"
+        android:name="com.dissekcorportion.notesjava.ui.NotasFragment"
         android:label="@string/title_notes"
         tools:layout="@layout/fragment_notas" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.dissekcorportion.notesjava.NotasFragment"
+        android:name="com.dissekcorportion.notesjava.ui.NotasFragment"
         android:label="@string/title_favorites"
         tools:layout="@layout/fragment_notas" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.dissekcorportion.notesjava.NotasFragment"
+        android:name="com.dissekcorportion.notesjava.ui.NotasFragment"
         android:label="@string/title_account"
         tools:layout="@layout/activity_notas" />
 </navigation>

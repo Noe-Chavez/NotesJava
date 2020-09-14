@@ -1,4 +1,4 @@
-package com.dissekcorportion.notesjava;
+package com.dissekcorportion.notesjava.ui;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.dissekcorportion.notesjava.R;
 import com.dissekcorportion.notesjava.models.Note;
 
 import java.util.ArrayList;

@@ -1,7 +1,8 @@
-package com.dissekcorportion.notesjava;
+package com.dissekcorportion.notesjava.ui;
 
 import android.os.Bundle;
 
+import com.dissekcorportion.notesjava.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;

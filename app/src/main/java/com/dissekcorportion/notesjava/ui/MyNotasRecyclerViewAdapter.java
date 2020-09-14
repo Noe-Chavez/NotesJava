@@ -1,4 +1,4 @@
-package com.dissekcorportion.notesjava;
+package com.dissekcorportion.notesjava.ui;
 
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.dissekcorportion.notesjava.R;
 import com.dissekcorportion.notesjava.models.Note;
 
 import java.util.List;
