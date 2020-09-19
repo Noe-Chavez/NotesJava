@@ -17,9 +17,9 @@ public class Note {
 
     private boolean favorite;
 
-    private int color;
+    private String color;
 
-    public Note(String title, String content, boolean favorite, int color) {
+    public Note(String title, String content, boolean favorite, String color) {
         this.title = title;
         this.content = content;
         this.favorite = favorite;
@@ -50,11 +50,11 @@ public class Note {
         this.favorite = favorite;
     }
 
-    public int getColor() {
+    public String getColor() {
         return color;
     }
 
-    public void setColor(int color) {
+    public void setColor(String color) {
         this.color = color;
     }
 }

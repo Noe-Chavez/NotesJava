@@ -19,9 +19,9 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Switch;
 
-public class NewNoteDialogFragment extends DialogFragment {
+import com.dissekcorportion.notesjava.models.Note;
 
-    private NewNoteDialogViewModel mViewModel;
+public class NewNoteDialogFragment extends DialogFragment {
 
     private View view;
 
@@ -33,13 +33,6 @@ public class NewNoteDialogFragment extends DialogFragment {
 
     public static NewNoteDialogFragment newInstance() {
         return new NewNoteDialogFragment();
-    }
-
-    @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        mViewModel = ViewModelProviders.of(this).get(NewNoteDialogViewModel.class);
-        // TODO: Use the ViewModel
     }
 
     @Override
@@ -60,11 +53,16 @@ public class NewNoteDialogFragment extends DialogFragment {
                                 color = "Rojo"; break;
                         }
                         boolean isFavorite = switchFavorite.isChecked();
+
+                        // Comunicar al ViewModel al nuevo dato.
+                        NewNoteDialogViewModel mViewModel = ViewModelProviders.of(getActivity()).get(NewNoteDialogViewModel.class);
+                        mViewModel.insertNote(new Note(titleNote, contentNote, isFavorite, color));
+                        dialog.dismiss();
                     }
                 })
                 .setNegativeButton(R.string.cancel_action_save_note, new DialogInterface.OnClickListener() { // botón cancelar
                     public void onClick(DialogInterface dialog, int id) {
-                        // User cancelled the dialog
+                        dialog.dismiss();
                     }
                 });
 

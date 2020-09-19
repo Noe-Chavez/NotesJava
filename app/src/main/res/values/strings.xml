@@ -18,4 +18,5 @@
     <string name="radio_button_red">Rojo</string>
     <string name="radio_button_gold">Oro</string>
     <string name="switch_is_favorite">Marcar como favorita</string>
+    <string name="new_note">Nueva nota</string>
 </resources>
